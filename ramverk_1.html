@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Startsida</a></li>
+            <li class="nav-item"><a class="nav-link" href="ramverk_1.html">Bootstrap</a></li>
+            <li class="nav-item"><a class="nav-link" href="ramverk_2.html">Tailwind</a></li>
+            <li class="nav-item"><a class="nav-link" href="publicering.html">Publicering</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <h1>Ramverk 1 - Bootstrap</h1>
+
+        <article>
+            <h2>Om Bootstrap</h2>
+            <p>
+                Bootstrap har en "mobile-first" kärna; vilket innebär att stylingen är uppbyggd med utgångspunkt för
+                mobilvisning och sedan anpassas när webbsidan förstoras, istället för tvärtom.
+                <br>
+                För att använda Bootstrap behöver man först inkludera filerna, i detta projekt har ag valt att göra
+                detta med hjälp av en CDN, vilket gör att jag inte först behöver hämta hem filerna lokalt för att kunna
+                använda dem.
+                <br>
+                För att styla sin webbsida med bootsstrap så använder man olika klasser för att välja vilken typ av layout man önskar på sina element. 
+                <br>
+                Innehållet delas även in i mindre grupper med hjälp av div-element för att få ett särskilt utseende.
+                <br>
+                Bootstrap var ganska enkelt att använda, och klasserna som används var enligt min åsikt relativt självförklarande. 
+            </p>
+        </article>
+    </div>
+
+    <div class="container">
+
+        <h2>Inköpslista</h2>
+
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Produkt</th>
+                    <th>Kategori</th>
+                    <th>Antal</th>
+                    <th>Tillagt av</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>Banan</td>
+                    <td>Frukt</td>
+                    <td>4</td>
+                    <td>Amanda</td>
+                </tr>
+                <tr>
+                    <td>Kaffe</td>
+                    <td>Torrvaror</td>
+                    <td>1</td>
+                    <td>Amanda</td>
+                </tr>
+                <tr>
+                    <td>Kyckling</td>
+                    <td>Kött</td>
+                    <td>2</td>
+                    <td>Amanda</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>Torrvaror</td>
+                    <td>1</td>
+                    <td>Amanda</td>
+                </tr>
+            </tbody>
+            </thead>
+        </table>
+
+        <h2>Lägg till ny:</h2>
+
+        <form action="POST">
+            <div class="form-group">
+                <label for="product">Produkt:</label>
+                <input class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <input class="form-check-input" type="checkbox" id="fruit" name="fruit" value="Frukt">
+                <label class="form-check-label" for="fruit">Frukt</label><br>
+                <input class="form-check-input" type="checkbox" id="meat" name="meat" value="Kött">
+                <label class="form-check-label" for="meat">Kött</label><br>
+                <input class="form-check-input" type="checkbox" id="dry" name="dry" value="Torrvaror">
+                <label class="form-check-label" for="dry">Torrvaror</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Antal:</label>
+                <select class="form-control form-control-sm" name="amount" id="amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="added">Tillagd av:</label>
+                <input class="form-control form-control-lg" type="textarea">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="submit">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="flex">
+            <li class="mr-6"><a href="index.html">Startsida</a></li>
+            <li class="mr-6"><a href="ramverk_1.html">Bootstrap</a></li>
+            <li class="mr-6"><a href="ramverk_2.html">Tailwind</a></li>
+            <li class="mr-6"><a href="publicering.html">Publicering</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="mb-2 mt-0 text-5xl font-medium leading-tight text-primary">Ramverk 2 - Tailwind</h1>
+    <article>
+        <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Om Tailwind</h2>
+        <p>För att använda Tailwinds bibliotek använder man, precis som med Bootstrap, sig av classer och div-element. 
+            <br>
+            Då detta är första gången jag användermig av CSS-ramverk, Tailwind inkluderat, tyckte jag att det var otroligt svårt. De klasser som används var väldigt avancerade och framförallt många. 
+            <br>
+            Mycket av den information om "templates" och liknande låg bakom låsta betalväggar och jag lyckades hitta mycket lite information om hur man stylade individuella element. 
+            <br>
+            Då Tailwind har mycket olika klasser, som stylar elementen på olika sätt, blir det möjligt att göra mer unika sidor än vad som är möjligt med exempelvis Bootstrap. 
+            <br>
+            Detta var dock inget ramverk för mig, då alla olika klasser gjorde det svårt för mig att förstå vad varje klass egentligen ådstakom. 
+        </p>
+    </article>
+
+    <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Inköpslista</h2>
+
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full text-left text-sm font-light">
+                <thead class="border-b font-medium dark:border-neutral-500">
+                  <tr>
+                    <th scope="col" class="px-6 py-4">Produkt</th>
+                    <th scope="col" class="px-6 py-4">Kategori</th>
+                    <th scope="col" class="px-6 py-4">Antal</th>
+                    <th scope="col" class="px-6 py-4">Tillagt av</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b dark:border-neutral-500">
+                    <td class="whitespace-nowrap px-6 py-4">Banan</td>
+                    <td class="whitespace-nowrap px-6 py-4">Frukt</td>
+                    <td class="whitespace-nowrap px-6 py-4">4</td>
+                    <td class="whitespace-nowrap px-6 py-4">Amanda</td>
+                  </tr>
+
+                  <tr class="border-b dark:border-neutral-500">
+                    <td class="whitespace-nowrap px-6 py-4">Kaffe</td>
+                    <td class="whitespace-nowrap px-6 py-4">Torrvaror</td>
+                    <td class="whitespace-nowrap px-6 py-4">1</td>
+                    <td class="whitespace-nowrap px-6 py-4">Amanda</td>
+                  </tr>
+
+                  <tr class="border-b dark:border-neutral-500">
+                    <td class="whitespace-nowrap px-6 py-4">Kyckling</td>
+                    <td class="whitespace-nowrap px-6 py-4">Kött</td>
+                    <td class="whitespace-nowrap px-6 py-4">2</td>
+                    <td class="whitespace-nowrap px-6 py-4">Amanda</td>
+                  </tr>
+
+                  <tr class="border-b dark:border-neutral-500">
+                    <td class="whitespace-nowrap px-6 py-4">Pasta</td>
+                    <td class="whitespace-nowrap px-6 py-4">Torrvaror</td>
+                    <td class="whitespace-nowrap px-6 py-4">1</td>
+                    <td class="whitespace-nowrap px-6 py-4">Amanda</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Lägg till ny:</h2>
+
+    <form class="w-full max-w-sm">
+        <div class="flex items-center border-b border-teal-500 py-2">
+            <input
+                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Produkt">
+        </div>
+
+        <div class="flex items-center mb-4">
+            <input id="fruit" type="checkbox" value="Frukt" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
+            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="fruit" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Frukt </label>
+
+            <input id="meat" type="checkbox" value="Kött" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
+            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="meat" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Kött </label>
+
+            <input id="dry" type="checkbox" value="Torrvaror" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
+            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="dry" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Torrvaror </label>
+        </div>
+
+        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Antal</label>
+        <select id="amount"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
+            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="madded" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tillagd av:</label>
+        <textarea id="added" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 
+            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+           ></textarea>
+
+           <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Lägg till</button>
+
+    </form>
+
+</body>
+
+</html>
