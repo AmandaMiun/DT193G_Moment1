@@ -4,139 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Bulma</title>
 
-    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-    <nav>
-        <ul class="flex">
-            <li class="mr-6"><a href="index.html">Startsida</a></li>
-            <li class="mr-6"><a href="ramverk_1.html">Bootstrap</a></li>
-            <li class="mr-6"><a href="ramverk_2.html">Tailwind</a></li>
-            <li class="mr-6"><a href="publicering.html">Publicering</a></li>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <ul class="navbar-start navbar-menu">
+            <li class="navbar-item"><a href="index.html">Startsida</a></li>
+            <li class="navbar-item"><a href="ramverk_1.html">Bootstrap</a></li>
+            <li class="navbar-item"><a href="ramverk_2.html">Tailwind</a></li>
+            <li class="navbar-item"><a href="publicering.html">Publicering</a></li>
         </ul>
     </nav>
 
-    <h1 class="mb-2 mt-0 text-5xl font-medium leading-tight text-primary">Ramverk 2 - Tailwind</h1>
-    <article>
-        <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Om Tailwind</h2>
-        <p>För att använda Tailwinds bibliotek använder man, precis som med Bootstrap, sig av klasser och div-element.
-            <br>
-            Då detta är första gången jag använder mig av CSS-ramverk, Tailwind inkluderat, tyckte jag att det var
-            otroligt svårt. De klasser som används var väldigt avancerade och framförallt många.
-            <br>
-            Mycket av den information om "templates" och liknande låg bakom låsta betalväggar och jag lyckades hitta
-            mycket lite information om hur man stylade individuella element.
-            <br>
-            Då Tailwind har många olika klasser, som stylar elementen på olika sätt, blir det möjligt att göra mer
-            unika sidor än vad som är möjligt med exempelvis Bootstrap.
-            <br>
-            Detta var dock inget ramverk för mig, då alla olika klasser gjorde det svårt för mig att förstå vad varje
-            klass egentligen ådstakom.
-        </p>
-        <a href="https://tailwindcss.com">Tailwinds webbplats</a>
-    </article>
+    <hr>
+    <div class="hero is-flex is-align-items-center">
+        <h1 class="title title is-1">DT193G - Moment 1</h1>
+    </div>
+    <hr>
 
-    <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Inköpslista</h2>
+    <div class="container">
 
-    <div class="flex flex-col">
-        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                <div class="overflow-hidden">
-                    <table class="min-w-full text-left text-sm font-light">
-                        <thead class="border-b font-medium dark:border-neutral-500">
-                            <tr>
-                                <th scope="col" class="px-6 py-4">Produkt</th>
-                                <th scope="col" class="px-6 py-4">Kategori</th>
-                                <th scope="col" class="px-6 py-4">Antal</th>
-                                <th scope="col" class="px-6 py-4">Tillagt av</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4">Banan</td>
-                                <td class="whitespace-nowrap px-6 py-4">Frukt</td>
-                                <td class="whitespace-nowrap px-6 py-4">4</td>
-                                <td class="whitespace-nowrap px-6 py-4">Amanda</td>
-                            </tr>
+        <div>
+            <h2 class="title is-2">Ramverk 2 - Bulma</h1>
+                <hr>
 
-                            <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4">Kaffe</td>
-                                <td class="whitespace-nowrap px-6 py-4">Torrvaror</td>
-                                <td class="whitespace-nowrap px-6 py-4">1</td>
-                                <td class="whitespace-nowrap px-6 py-4">Amanda</td>
-                            </tr>
+                <article>
+                    <h2 class="subtitle">Om Bulma</h2>
+                    <p>
+                        Bulma är ett gratis CSS-framwork som är baserad på "open-source", och går därför att anpassa själv om man skulle vilja.
+                        <br>
+                        Bulma var enkelt att använda, och påminde mycket om bootstrap i uppbyggnad. De klasser som fanns att jobba med var tydliga och enkla att förstå vad de gjorde. 
+                        <br>
+                        De har även en enkel och bra webbplats som visar mycket at de klasser som finns att arbeta med och hur man enklast använder dessa för att lyckat resultat.
+                        <br>
+                        <br>
+                    </p>
+                    <a class="button" href="https://bulma.io">Bulmas webbplats</a>
+                    <hr>
+                </article>
+        </div>
 
-                            <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4">Kyckling</td>
-                                <td class="whitespace-nowrap px-6 py-4">Kött</td>
-                                <td class="whitespace-nowrap px-6 py-4">2</td>
-                                <td class="whitespace-nowrap px-6 py-4">Amanda</td>
-                            </tr>
 
-                            <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4">Pasta</td>
-                                <td class="whitespace-nowrap px-6 py-4">Torrvaror</td>
-                                <td class="whitespace-nowrap px-6 py-4">1</td>
-                                <td class="whitespace-nowrap px-6 py-4">Amanda</td>
-                            </tr>
 
-                        </tbody>
-                    </table>
+        <div>
+
+            <h2 class="subtitle">Inköpslista</h2>
+
+            <table class="
+            table is-striped">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Kategori</th>
+                        <th>Antal</th>
+                        <th>Tillagt av</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Banan</td>
+                        <td>Frukt</td>
+                        <td>4</td>
+                        <td>Amanda</td>
+                    </tr>
+                    <tr>
+                        <td>Kaffe</td>
+                        <td>Torrvaror</td>
+                        <td>1</td>
+                        <td>Amanda</td>
+                    </tr>
+                    <tr>
+                        <td>Kyckling</td>
+                        <td>Kött</td>
+                        <td>2</td>
+                        <td>Amanda</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta</td>
+                        <td>Torrvaror</td>
+                        <td>1</td>
+                        <td>Amanda</td>
+                    </tr>
+                    <tr>
+                        <td>Ris</td>
+                        <td>Torrvaror</td>
+                        <td>1</td>
+                        <td>Amanda</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+            <hr>
+
+            <h2 class="subtitle">Lägg till ny:</h2>
+
+            <form action="POST">
+
+                <div class="field">
+                    <label for="product">Produkt:</label>
+                    <div class="control">
+                    <input type="text">
+                    </div>
                 </div>
-            </div>
+
+                <div class="field">
+                    <input type="checkbox" id="fruit" name="fruit" value="Frukt">
+                    <label for="fruit">Frukt</label><br>
+                    <input type="checkbox" id="meat" name="meat" value="Kött">
+                    <label for="meat">Kött</label><br>
+                    <input type="checkbox" id="dry" name="dry" value="Torrvaror">
+                    <label for="dry">Torrvaror</label><br>
+                </div>
+
+                <div class="field">
+                    <label for="amount">Antal:</label>
+                    <select name="amount" id="amount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="added">Tillagd av:</label>
+                    <div class="control">
+                    <input type="textarea">
+                </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                    <input type="submit">
+                    </div>
+                </div>
+            </form>
+
         </div>
     </div>
-
-
-    <h2 class="mb-2 mt-0 text-4xl font-medium leading-tight text-primary">Lägg till ny:</h2>
-
-    <form class="w-full max-w-sm">
-        <div class="flex items-center border-b border-teal-500 py-2">
-            <input
-                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text" placeholder="Produkt">
-        </div>
-
-        <div class="flex items-center mb-4">
-            <input id="fruit" type="checkbox" value="Frukt" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
-            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="fruit" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Frukt </label>
-
-            <input id="meat" type="checkbox" value="Kött" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
-            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="meat" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Kött </label>
-
-            <input id="dry" type="checkbox" value="Torrvaror" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 
-            dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-            <label for="dry" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Torrvaror </label>
-        </div>
-
-        <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Antal</label>
-        <select id="amount"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 
-            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-
-
-        <label for="madded" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tillagd av:</label>
-        <textarea id="added" rows="4"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 
-            dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-
-        <button type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Lägg
-            till</button>
-
-    </form>
 
 </body>
 
